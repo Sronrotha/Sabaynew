@@ -1,0 +1,428 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300&family=Koulen&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Roulen: Roulen ,Battambang;
+    --font:18px;
+    --white:white;
+    --red:#FA1939;
+    --green:#38C378;
+    --pink:#FA5480;
+
+}
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+.header .box{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--red);
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.navbar .menu{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    padding: 15px 0px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: var(--font);
+    color: var(--white);
+    font-family: var(--Roulen);
+}
+ul li a:hover{
+    cursor: pointer;
+    background-color: hsl(0, 1%, 36%);
+    opacity: 0.3;
+}
+.container{
+    width: 60%;
+    height: 512px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .box-one{
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+.box-one .box-1{
+    width: 60%;
+    height: 100%;
+}
+.box-1 .small-box1{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.small-box1  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.small-box1 .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    opacity: 0.5;
+}
+.small-box1 .text{
+    width: 100%;
+    height: 100px;
+    color: var(--white);
+    font-family: var(--Roulen);
+    padding: 0px 15px;
+    position: absolute;
+    overflow: hidden;
+    top:40%;
+    transition: 0.4s;
+}
+.small-box1 .text:hover{
+    height:200px;
+    top:10%;
+    transition: 0.3s;
+}
+h3:hover{
+    color: red;
+}
+    
+.small-box1 .date{
+    width: 30%;
+    height: auto;
+    font-family: var(--Roulen);
+    padding: 5px 15px;
+    color:var(--white);
+    position: absolute;
+    bottom: 0%;
+}
+.small-box1 .corner{
+    width: 20%;
+    height: auto;
+    background-color: yellow;
+    font-family: var(--Roulen);
+    font-size: var(--font);
+    position: absolute;
+    top:0%;
+    margin: 10px 0px;
+    padding-left: 5px;
+}
+.small-box1 .border{
+    width: 5%;
+    height: 44px;
+    background-color: yellow;
+    position: absolute;
+    top: 3.5%;
+    left:20%;
+    padding: 10px 0px;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+/*===========*/
+.box-one .box-2{
+    width: 40%;
+    height: 100%;
+    background-color: blue;
+}
+.box-2 .small-box2{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.small-box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.small-box2 .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top:0%;
+    opacity: 0.5;
+}
+.small-box2 .text{
+    width: 100%;
+    height: 70px;
+    color: var(--white);
+    font-family: var(--Roulen);
+    padding: 0px 15px;
+    position: absolute;
+    overflow: hidden;
+    top:50%;
+    transition: 0.4s;
+}
+.small-box2 .date{
+    width: 100%;
+    height: auto;
+    font-family: var(--Roulen);
+    padding: 5px 15px;
+    color:var(--white);
+    position: absolute;
+    bottom: 0%;
+}
+.small-box2 .text:hover{
+    height: 200px;
+    top:10%;
+    transition: 0.3s;
+}
+.small-box2 .corner{
+    width: 20%;
+    height: auto;
+    background-color: var(--green);
+    font-family: var(--Roulen);
+    font-size: var(--font);
+    position: absolute;
+    top:0%;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+.small-box2 .border{
+    width: 9%;
+    height: 44px;
+    background-color:var(--green);
+    position: absolute;
+    top: 3.5%;
+    left:20%;
+    padding: 10px 0px;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+/*===========*/
+.container .box-two {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-two .box{
+    width: 100%;
+    height: 49%;
+    background-color: #70c338;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*===========*/
+.line{
+    width: 60%;
+    height: 50px;
+    border: 2px solid red;
+    margin: 10px auto;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.line .corner-1{
+    width: 7%;
+    height: 100%;
+    background-color: #FA1939;
+    font-size: var(--font);
+    font-family: var(--Roulen);
+    color: var(--white);
+    padding: 10px;
+}
+.line .border{
+    width: 4%;
+    height: 50px;
+    background-color: var(--red);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top:0%;
+    left: 6.9%;
+}
+/*===========*/
+.container-one{
+    width: 60%;
+    height: 800px;
+    box-shadow: 10px 10px 20px rgb(202, 198, 198);
+    margin: 0px auto;
+    padding: 10px 20px;
+}
+.container-one .small-container{
+    width: 100%;
+    height: 43%;
+    display: flex;
+}
+.container-one .content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.content img{
+    width: 100%;
+    height:70%;
+    object-fit: cover;
+}
+.content img:hover{
+    transform: scale(0.9);
+    transition: 0.5s; 
+    cursor: pointer;
+}
+.content  p{
+    padding: 5px;
+    font-family: var(--Roulen);
+    font-size: var(--font);
+    color:black
+}
+.container-one .small-container1{
+    width: 100%;
+    height: 57%;
+    display: flex;
+}
+.small-container1 .content-one{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-one .small-content{
+    width: 24%;
+    height: 50%;
+    transition: 0.5s;
+}
+.small-content img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.small-content p{
+    padding: 0px 5px;
+    font-family: var(--Roulen);
+    font-size: 15px;
+    color:black
+}
+.small-container1 .content-two{
+    width: 25%;
+    height: 100%;
+}
+.content-two img {
+    width: 100%;
+    object-fit: cover;
+    padding: 50px 10px;
+}
+.small-content img:hover{
+    transform: scale(0.9);
+    transition: 0.5s; 
+    cursor: pointer;
+}
+.line-1{
+    width: 60%;
+    height: 50px;
+    border: 2px solid var(--pink);
+    margin: 10px auto;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.line-1 .corner-1{
+    width: 7%;
+    height: 100%;
+    background-color:var(--pink);
+    font-size: var(--font);
+    font-family: var(--Roulen);
+    color: var(--white);
+    padding: 10px;
+}
+.line-1 .border{
+    width: 4%;
+    height: 49px;
+    background-color: var(--pink);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top:0%;
+    left: 6.9%;
+}
+.container-two{
+    width: 60%;
+    height: 520px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 20px rgb(202, 198, 198);
+}
+.container-two p{
+    font-size: 15px;
+    font-family: var(--Roulen);
+    padding: 0px 5px;
+}
+.container-two .container-two1{
+    width: 29%;
+    height: 100%;
+}
+.picture{
+    width: 100%;
+    height: 70%;
+}
+.title p{
+    width: 100%;
+    height: 30%;
+    background-color: var(--pink);
+    font-size: 20px;
+    font-family: var(--Roulen);
+    padding: 10px;
+    color: var(--white);
+}
+.container-two1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-two .container-two2{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-two2 .small-container-two2{
+    width: 24%;
+    height: 50%;
+}
+.small-container-two2 img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+.container-two img:hover{
+    transform: scale(0.9);
+    transition: 0.5s; 
+    cursor: pointer;
+}
+.container-fluid .container{
+    height: 300px;
+}
+.row {
+    height: 20%;
+}
