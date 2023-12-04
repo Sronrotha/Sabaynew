@@ -288,7 +288,7 @@ h3:hover{
     cursor: pointer;
 }
 .content  p{
-    padding: 5px;
+    padding: 5px 5px;
     font-family: var(--Roulen);
     font-size: var(--font);
     color:black
@@ -375,7 +375,7 @@ h3:hover{
 .container-two p{
     font-size: 15px;
     font-family: var(--Roulen);
-    padding: 0px 5px;
+    padding: 5px 5px;
 }
 .container-two .container-two1{
     width: 29%;
@@ -423,6 +423,23 @@ h3:hover{
 .container-fluid .container{
     height: 300px;
 }
-.row {
-    height: 20%;
+.col-4 p{
+    color: white;
+    font-family: var(--Roulen);
+}
+h4{
+    padding: 30px 0px;
+    color: white;
+    font-family: var(--Roulen);
+    padding-left: 10px;
+}
+.row img{
+    width: 60px;
+    height: 50px;
+    padding: 0px;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
 }
